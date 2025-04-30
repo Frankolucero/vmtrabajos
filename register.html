@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Únete a esta pagina</h2>
+        <div class="container-input-datos"> 
+            <label class="block" for="nombreId">Nombre</label>
+            <input class="block" id="nombreId" type="text">
+        </div>
+        <div class="container-input-datos">
+            <label class="block" for="apellidoId">Apellido</label>
+            <input class="block" id="apellidoId" type="text">
+        </div>
+        <div class="container-input-datos">
+            <label class="block" for="gmailId">Gmail</label>
+            <input class="block" id="gmailId" type="gmail">
+        </div>
+        <div class="container-input-datos">
+            <label class="block" for="domicilioId">Domicilio</label>
+            <input class="block" id="domicilioId" type="text">
+        </div>
+        <div class="container-input-datos">
+            <label class="block" for="telefonoId">Numero de telefono</label>
+            <div class="telefono">
+                <select id="telefonoId" name="telefonoId">
+                    <option value="AR">Argentina (+54)</option>
+                    <option value="BO">Bolivia (+591)</option>
+                    <option value="BR">Brasil (+55)</option>
+                    <option value="CL">Chile (+56)</option>
+                    <option value="CO">Colombia (+57)</option>
+                    <option value="CR">Costa Rica (+506)</option>
+                    <option value="CU">Cuba (+53)</option>
+                    <option value="DO">República Dominicana (+1)</option>
+                    <option value="EC">Ecuador (+593)</option>
+                    <option value="SV">El Salvador (+503)</option>
+                    <option value="GT">Guatemala (+502)</option>
+                    <option value="HN">Honduras (+504)</option>
+                    <option value="MX">México (+52)</option>
+                    <option value="NI">Nicaragua (+505)</option>
+                    <option value="PA">Panamá (+507)</option>
+                    <option value="PY">Paraguay (+595)</option>
+                    <option value="PE">Perú (+51)</option>
+                    <option value="PR">Puerto Rico (+1)</option>
+                    <option value="UY">Uruguay (+598)</option>
+                    <option value="VE">Venezuela (+58)</option>
+                    <option value="US">Estados Unidos (+1)</option>
+                    <option value="ES">España (+34)</option>
+                </select>
+                <input id="telefonoId" type="text">
+            </div>
+        </div>        
+        <div class="container-input-datos">
+            <label class="block" for="mesId">Fecha de nacimiento</label>
+            <div class="nacimiento">
+                <select id="mesId" name="mesId">
+                    <option value="" disabled selected>Mes</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>   
+                <select id="diaId" name="diaId">
+                    <option value="" disabled selected>Día</option>
+                </select>   
+                <select id="añoId" name="añoId">
+                    <option value="" disabled selected>Año</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-input-datos">
+            <div class="datosPersonalesIntimos">
+                <div class="columna">
+                    <label for="estadoId">Estado</label>
+                    <select id="estadoId" name="estadoId">
+                        <option value="" disabled selected>Estado</option>
+                        <option value="Soltero">Soltero</option>
+                        <option value="En pareja">En pareja</option>
+                    </select>
+                </div>
+                <div class="columna">
+                    <label for="sexoId">Sexo</label>
+                    <select id="sexoId" name="sexoId">
+                        <option value="" disabled selected>Sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="No binario">No binario</option>
+                        <option value="Otro">Prefiero no decirlo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <p>Esta pagino puede usar tu número de teléfono para llamarte o enviarte mensajes de texto con información sobre tu cuenta.</p>
+        <p>Al hacer clic en Registrarse, aceptas los Términos del servicio de <a href="#">Pagina</a> y la aplicación del <a href="#">Aviso de privacidad</a>.</p>
+        <p>Ver mis <a href="datos.html">Datos</a></p>
+        <button onclick="registrarse()">Registrarse</button>
+        <button >Ya estoy registrado</button>
+        <ul id="listaUsuarios"></ul>
+    </div>  
+</body>
+</html>

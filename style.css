@@ -1,0 +1,183 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#e4e3e3;
+}
+h2 {
+    position: relative;
+    display: inline-block; /* esto es clave para que el ancho se ajuste al texto */
+    font-size: 25px;
+    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* distancia debajo del texto */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(98, 75, 121); /* color del subrayado */
+    border-radius: 2px;
+  }
+  
+.container{
+    border-radius:10px;
+    display: block;
+    box-shadow: 5px 5px 2px 0px rgba(113, 73, 146, 0.247);
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    margin: 70px auto;
+    padding: 40px
+}
+
+.container-input-datos{
+    margin-top: 25px
+}
+
+.block{
+    display: block;
+}
+
+.telefono{
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   gap: 10px;
+}
+
+.telefono select[id="telefonoId"]{
+    width: 60%;
+}
+
+.nacimiento{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap:10px;
+}
+.datosPersonalesIntimos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.columna{
+    width: 100%;
+}
+
+label{ 
+    margin-bottom: 3px;
+    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#18181b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input, select{
+    padding: 7px;
+    border: 1px solid #18181b;;
+    border-radius: 3px;
+    width: 100%;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color:#696977;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+button{
+    width: 100%;
+    text-align: center;
+    font-size: 13.5px;
+    background-color: rgb(161, 83, 235);
+    color:white;
+    padding: 6px;
+    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: rgb(147, 91, 199);
+    transition: .3s ease;
+}
+
+input:hover, select:hover{
+    outline: none;
+    border-color: rgba(50, 50, 57, 0.5);
+    box-shadow: inset 0 0 0 1.5px rgba(50, 50, 57, 0.5);
+}
+
+input:focus, select:focus{
+    border-color: rgb(147, 91, 199);
+    outline: none;
+    box-shadow: inset 0 0 0 2.5px rgb(147, 91, 199);
+    border-radius: 5px;
+}
+
+a:hover{
+    color:rgb(147, 91, 199);
+}
+
+button:active {
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 4px 10px rgba(147, 91, 199, 0.3);
+    border-color: rgb(147, 91, 199);    
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    animation: bounce 0.5s ease;
+}
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.container-input-datos {
+    transition: transform 0.3s ease;
+}
+  
+.container-input-datos:has(input:focus), .container-input-datos:has(select:focus) {
+    transform: translateY(-2px);
+}
+
+.container {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn { 
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+

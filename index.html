@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Villa Mercedes Trabajos</title>
+  <link rel="stylesheet" href="stylemain.css" />
+  <link rel="icon" href="icons/images.png" type="image/png">
+</head>
+<body>
+
+  <nav>
+    <div class="left">
+      <ul>
+        <li><a href="#"><img src="/PROYECTO DIAS 9 ANTERIORMENTE/icons/MuniSomos_celeste.png" alt="icon" style="width: 300px;"></a></li>
+  
+        <li class="has-dropdown"><a href="#">Creación</a>
+          <div class="dropdown">
+            <a href="#">Publicar trabajo</a>
+            <a href="#">Crear perfil</a>
+            <a href="#">Subir CV</a>
+          </div>
+        </li>
+  
+        <li class="has-dropdown"><a href="#">Trabajos</a>
+          <div class="dropdown">
+            <a href="#">Disponibles</a>
+            <a href="#">Favoritos</a>
+            <a href="#">Postulados</a>
+          </div>
+        </li>
+  
+        <li class="has-dropdown"><a href="#">Comunidad</a>
+          <div class="dropdown">
+            <a href="#">Foros</a>
+            <a href="#">Eventos</a>
+            <a href="#">Noticias</a>
+          </div>
+        </li>
+  
+        <li class="has-dropdown"><a href="#">Consultas</a>
+          <div class="dropdown">
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Contactar soporte</a>
+          </div>
+        </li>
+  
+        <li class="has-dropdown"><a href="#">Ayuda</a>
+          <div class="dropdown">
+            <a href="#">Guía rápida</a>
+            <a href="#">Tutoriales</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li><a href="#">EMPEZAR</a></li>
+        <li><a href="#">INICIAR SESIÓN</a></li>
+        <li><a href="#" id="btn-registrarse">REGISTRARSE</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="maincont">
+    <div class="midpart">
+      <h1>Villa Mercedes Trabajos</h1>
+      <h2>Encuentra trabajos fáciles y en poco tiempo</h2>
+      <p>
+        Trabajos Villa Mercedes se centra en facilitarle a los usuarios encontrar un trabajo de forma rápida y accesible. <br>
+        Empieza hoy y haz tu propio camino.
+      </p>
+      <button class="btn">Buscar un nuevo trabajo</button>
+      <p class="inline">o <a href="#">Haz click aqui.</a></p>
+      
+    </div>
+    <div class="secondpart">
+      <div class="carousel">
+        <div class="carousel-track">
+          <img id="carousel-image" src="" alt="Imagen del carrusel">
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Acerca de</h4>
+        <ul>
+          <li><a href="#">¿Quiénes somos?</a></li>
+          <li><a href="#">Equipo</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Explora</h4>
+        <ul>
+          <li><a href="#">Buscar empleos</a></li>
+          <li><a href="#">Publicar ofertas</a></li>
+          <li><a href="#">Categorías</a></li>
+          <li><a href="#">Freelancers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Asesoría laboral</a></li>
+          <li><a href="#">Perfil profesional</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Accesibilidad</a></li>
+          <li><a href="#">Mapa del sitio</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-social">
+      <p>Síguenos en redes</p>
+      <div class="social-icons">
+        <a href="#"><img src="/PROYECTO DIAS 9 ANTERIORMENTE/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="/PROYECTO DIAS 9 ANTERIORMENTE/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="/PROYECTO DIAS 9 ANTERIORMENTE/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="/PROYECTO DIAS 9 ANTERIORMENTE/icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Villa Mercedes Trabajos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <!--VENTANA DE LOGIN-->
+  <div class="modal-overlay" id="loginOverlay"></div>
+
+  <div class="modal-login" id="loginModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeLogin">&times;</span>  
+      <h2>Iniciar Sesión</h2>
+      <input type="email" placeholder="Correo electrónico" />
+      <input type="password" placeholder="Contraseña" />
+      <button class="btn-login">Iniciar sesión</button>
+      <div class="social-login">
+        <button class="google">Continuar con Google</button>
+        <button class="microsoft">Continuar con Microsoft</button>
+      </div>
+    </div>
+  </div>
+
+<!--VENTANA DE REGISTRO-->
+<!-- Coloca esto justo antes del cierre de </body> -->
+<div class="modal-overlay" id="registroOverlay"></div>
+
+<div class="modal-registro" id="registroModal">
+  <div class="modal-content">
+    <span class="close-modal" id="closeRegistro">&times;</span>  
+    <h2>Registrarse</h2>
+    <form id="formRegistro">
+      <input type="text" placeholder="Nombre" required>
+      <input type="text" placeholder="Apellido" required>
+      <input type="number" placeholder="Edad" min="18" max="99" required>
+      <input type="date" placeholder="Fecha de nacimiento" required>
+      <input type="number" placeholder="DNI" required>
+      <input type="text" placeholder="Puesto que ocupa" required>
+      <button type="submit" class="btn-registro">Registrarse</button>
+    </form>
+  </div>
+</div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
