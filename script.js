@@ -103,10 +103,10 @@ toggleBtn.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const images = [
-      "/PROYECTO DIAS 9 ANTERIORMENTE/arquitecto.jpeg",
-      "/PROYECTO DIAS 9 ANTERIORMENTE/charla.jpg",
-      "/PROYECTO DIAS 9 ANTERIORMENTE/dataanalist.jpg",
-      "/PROYECTO DIAS 9 ANTERIORMENTE/dataanalist.jpg"
+      "arquitecto.jpeg",
+      "charla.jpg",
+      "dataanalist.jpg",
+      "dataanalist.jpg"
     ];
   
     const track = document.querySelector(".carousel-track");
